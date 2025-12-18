@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="icon" href="./assets/img/capa.png" sizes="any">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="fundo">
+
+    <img src="./assets/img/capa.png" alt="capa" class="capa">
+    <br>
+    <main class="conversor">
+        <h1>Conversor de Moedas</h1>
+
+        <label class="campo1">
+            Converter <b>DE:</b>
+
+            <optiongroup>
+                <select id="moeda-de">
+                    <option value="BRL" selected>R$ Real Brasileiro (BRL)</option>
+                    <option value="USD">US$ Dólar Americano (USD)</option>
+                    <option value="EUR">€ Euro (EUR)</option>
+                    <option value="ARS">$ Peso Argentino (ARS)</option>
+                    <option value="BTC">₿ Bitcoin (BTC)</option>
+                </select>
+        </label>
+
+        <label class="campo2">
+            Converter <b>PARA:</b>
+
+            <optiongroup>
+                <select id="moeda-para">
+                    <option value="USD" selected>US$ Dólar Americano (USD)</option>
+                    <option value="EUR">€ Euro (EUR)</option>
+                    <option value="ARS">$ Peso Argentino (ARS)</option>
+                    <option value="BTC">₿ Bitcoin (BTC)</option>
+                    <option value="BRL">R$ Real Brasileiro (BRL)</option>
+                </select>
+        </label>
+
+        <label class="campo3">
+            <b>Valor</b>
+
+            <input type="money" id="valor" placeholder="Digite o valor" />
+        </label>
+
+        <div class="campo4">
+            <button id="converter-btn">Converter</button>
+        </div>
+
+        <section>
+            <div class="currency-box">
+                <img class="moeda-img moeda-de" src="./assets/img/brasil.png" alt="moeda-a-converter">
+                <p class="currency"> Real Brasileiro (BRL)</p>
+                <p class="currency-value-to-convert"> R$ 0,00</p>
+            </div>
+
+            <img src="./assets/img/seta.png" alt="seta" class="seta">
+
+            <div class="currency-box">
+                <img class="moeda-img moeda-para" src="./assets/img/usa.png" alt="moeda-convertida">
+                <p class="currency-name"> Dólar Americano (USD)</p>
+                <p class="currency-value-converted"> US$ 0.0</p>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
